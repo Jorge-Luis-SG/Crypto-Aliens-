@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/custom.css?v7">
+    <link rel="stylesheet" href="./scss/header_footer.css?v7">
+    <link rel="stylesheet" href="./scss/main.css?v6">
+    <title>Bienvenido</title>
+</head>
+<body>
+  <header>
+    <nav class="container-fluid">
+            <div class="row header rounded-pill d-flex align-items-center px-lg-4" id="header">
+                <div class="col-6 col-lg-3  header-img1">
+                    <a href="https://beer-money.io/crypto-alien">
+                      <img src="./images/Logo-cryptoalien-final.svg" alt="Logo Crypto Alien">
+                    </a>
+                </div>
+
+                <div class="col-6 col-lg-6 d-flex justify-content-center menu-header-ul">
+                  <div class="hamburger-menu" id="hamburger-menu">
+                    <img id="menu-icon-movil" src="./images/open-menu.svg" alt="">
+                </div>
+                    <ul class="nav menu-header" id="nav-menu-header">
+                        <li class="nav-item ">
+                          <a class="nav-link text-white" href="#">What is it?</a>
+                        </li>
+                        <li class="nav-item second-li">
+                          <a class="nav-link text-white" href="#">Benefits</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#">Team</a>
+                        </li>
+                      </ul>
+                     
+                    <div class="d-flex align-items-center justify-content-end header-img3 header-section3-movile">
+                      <a href="https://beer-money.io/">
+                        <img src="./images/sello-beer-2.png" alt="">
+                      </a>
+                        <a class="btn btn-primary rounded-pill btn-connect-wallet " href="./welcome.html" role="button">Log out</a>
+                    </div>
+
+                </div>
+                
+                <div class="col-lg-3  d-flex align-items-center justify-content-end header-img3">
+                  <a href="https://beer-money.io/">
+                    <img src="./images/sello-beer-2.png" alt="">
+                  </a>
+                  <a class="btn btn-primary rounded-pill btn-connect-wallet " href="./welcome.html" role="button">Log out</a>
+                </div>
+            </div>
+    </nav>
+</header>
+
+    <main>
+      <div class="container-fluid back-investor " id="back-investor">
+        <div class="back-investor-box1" id="perfil">
+          <div id="arrow-div">
+          <a href="#"><img src="./images/arrow-left.png" id="arrow"></a>
+          </div>
+          <img src="./images/Elipse-6.png" alt="">
+          <h3 class="name data-perfil-text">John Wayne</h3>
+          <p class="email data-perfil-text">JohnWayne@gmail.com</p>
+          <a class="btn-box1" id=""><img src="./images/nft-logo.svg" alt=""><p class="data-perfil-text">My NFT’S</p></a>
+          <a class="btn-box1"><img src="./images/cohete.png" alt=""><p class="data-perfil-text">Investor</p></a>
+          <a class="btn-box1"><img src="./images/noticias.svg" alt=""><p class="data-perfil-text">Noticias</p></a>
+          <p id="follow-us">Follow Us</p>
+          <div class="socials-media">
+              <img src="./images/facebook.png" alt="">
+              <img src="./images/instagram.png" alt="">
+              <img src="./images/twitter.svg" alt="">
+              <img src="./images/youtube.png" alt="">
+          </div>
+          
+      </div>
+      <div class="back-investor-box2">
+          <div class="back-investor-box2-section1">
+              <ul>
+                  <li>Saldo Disponible</li>
+                  <li class="bar-menu-investor">TOTAL: $1,500</li>
+                  <button><li>Stake All</li></button>
+              </ul>
+          </div>
+          <div class="back-investor-box2-section2">
+                <div class="back-investor-box2-section2-nft">
+                  <img src="./images/nft-1.png" alt="">
+              </div>
+              <div class="back-investor-box2-section2-nft">
+                  <img src="./images/nft-2.png" alt="">
+              </div>
+              <div class="back-investor-box2-section2-nft">
+                  <img src="./images/nft-3.png" alt="">
+              </div>
+              <div class="back-investor-box2-section2-nft four">
+                  <img src="./images/nft-ver-mas.png" alt="">
+                  <button id="back-investor-box-2-section-2-button">Ver mas</button>
+              </div>
+            </div>
+          <div class="back-investor-box2-section3">
+              <div class="back-investor-box2-section3-box1">
+                  <h4 class="wallet-title-price-investor">Wallet Value</h4>
+                  <p class="price">432.12</p>
+                  <p>USD</p>
+              </div>
+              <div class="back-investor-box2-section3-box2">
+                  <h4>Staking</h4>
+                  <canvas class="grafica" id="grafica" height="120"></canvas>
+              </div>
+              
+          </div>       
+      </div>
+      </div>
+    </main>
+     <footer>
+      <div class="footer">
+        <img src="./images/LOGO-WHITE.png" alt="Beer Money">
+        <div class="footer-menu">
+          <ul class="d-flex flex-column flex-lg-row justify-content-center">
+            <li>NFT</li>
+            <li class="footer-border-side">TERMS</li>
+            <li>DOCS</li>
+            <li class="footer-border-side">FAQ</li>
+            <li>PRIVACY</li>
+          </ul>
+        </div>
+        <h6 class="copyright">Copyright 2022 CryptoAlien Beer Club
+        </h6>
+      </div>
+    </footer>
+    <style>
+      canvas#grafica {
+          width: 90%!important;
+          max-width: 600px !important;
+          margin: auto;
+          } 
+    </style>
+    <script src="./js/global.js?v2"></script>
+    <script src="./js/grafica.js?v2"></script>
+
+</body>
+
+
+</html>

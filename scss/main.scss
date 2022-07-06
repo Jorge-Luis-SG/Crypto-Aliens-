@@ -1,0 +1,1449 @@
+@import "custom";
+
+//HOME SECCION ! 
+.home-section1{
+    background-image: url(../images/fondo-hero-section.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+
+   &-container{
+     // background-color: #291B16;   
+     padding-top:140px;
+     border:1px solid $border-color;
+     border-radius:25px;
+     &-box1{
+         h2{
+           font-size:50px;
+           font-weight: bold;
+           font-size:4rem;
+           text-align: center;
+         }
+         img{
+             max-width: 450px;
+             width: 100%;
+         }
+          .background-home-section1-mint{
+            @extend %btn-mint-home;
+             background-image: url('../images/Grupo-369.png');
+             .home-section1-mint-btn{
+                @extend %btn-mint-home-1;
+                 @include bg-gradient-primary-1;
+             }
+         }
+     }
+     &-box2{
+         img{
+             max-width: 430px;
+             width: 100%;
+         }
+     }
+//PARTE BAJA DE LAS REDES SOCIALES E IDIOMA 
+    &-bottom{
+        & > div{
+            width:96% !important;
+            margin:auto;
+            padding-bottom: 9px;
+        }
+        .icons-redes-socials-home{
+            .follow-us{
+                max-width: 160px;
+                ;
+                p{
+                    font-family: 'HelveticaNeue';
+                    font-weight: 100;
+                    font-size: 1.5rem;
+                    
+                }
+            }
+            
+            &-container{
+                background:$bg-semi-transparent-1;
+                max-width: 210px;
+                min-width: 180px;
+                width: 100%;
+                padding: 11.5px 0px;
+            }
+            img{
+                transform:rotateZ(270deg);
+                width: 20px;
+                margin-right: 19px;
+            }
+            .yt-icon-home{
+                width: 17px;
+            }
+        }
+        .languaje-home{
+                width: 135px;
+                height: 55px;
+                background-color: #FFF2DE05;
+                color: #fff;
+                cursor: pointer;
+                transform: translateY(-6px);
+            #en-home{
+                border-radius: 18px;
+                border: 1px solid #fff;
+            }
+            span{
+                width: 50px;
+                height: 33px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.3rem;
+            }
+                
+        }
+    }
+   }
+}    
+
+
+//SECCION 2
+.home-section2{
+    padding: 0;
+    &-container{
+        &-box1_1{
+            img{
+                max-width:320px;
+                width:100%;
+                z-index:5;
+            }
+        }
+        &-box1_2{
+            img{
+                max-width:340px;
+                width:100%;
+            } 
+        }
+        @media screen and (max-width:869px){
+            &-box1_1{
+                img{
+                    max-width:290px;
+                margin: 15px auto
+
+                }
+            }
+             &-box1_2{
+            img{
+                max-width:280px;
+                margin: auto
+            } 
+        }
+        }
+        &-box2{
+            h2{
+                @include bg-gradient-primary-text;
+                @include size-h2-primary-text;
+                margin-top: 55px;
+            }
+            hr{
+                width: 67%;
+                @extend %separador;
+
+            }
+            & > p {
+                max-width: 315px;
+                font-family: 'Gotham';
+                font-weight: 500;
+                font-size: 1.25rem;
+            }
+            .price-what{
+                    width: 290px;
+                    height: 95px;
+                    padding: 30px;
+                    @extend %price-template-1;
+                    .price-what-where{
+                        width: 140px;
+                        height: 60px;
+                        @extend %price-template-1-2;
+                    }
+                    
+            }
+        }
+    }
+    
+}
+//SECCION 3
+.home-section3{
+    background: rgb(236,194,84);
+    background: linear-gradient(180deg, rgba(236,194,84,1) 41%, rgba(209,142,37,1) 71%, rgba(197,119,8,1) 100%);
+    margin-top: -183px;
+    padding-bottom:60px;
+
+//SEPARADOR
+    &-separator{
+        height: 320px;
+        width:100%;
+        background:transparent;
+        margin-top: -120px;
+        &-container{
+            clip-path: polygon(0 37%, 100% 0, 100% 100%, 0% 100%);
+            background: rgb(236,194,84);
+            height: 320px;
+            width:100%;
+        }
+    }
+    //FIN SEPARADOR
+
+    //CAJA CONTENEDORA
+    &-container{
+        max-width:1700px;
+        margin: auto;
+    }
+    //Bloque 1
+    &-box1{
+       img{
+        max-width: 300px;
+        width: 100%;
+        z-index: 5;
+
+       }
+    }
+    //Bloque 2
+    &-box2{
+        z-index: 5;
+        h3{
+            font-size: 5rem;
+            font-weight: bold;
+        }
+        h5 > {
+            font-size: 1.3rem;
+            font-weight: 500;  
+        }
+        p {
+            font-size: 1.15rem;
+            font-family: 'Gotham';
+            font-weight: 500;
+            max-width: 290px;
+            margin: 0 auto 20px;
+        }
+    //Contendor de la imagen
+         figure{
+            max-width: 180px; 
+            min-width: 120px; 
+            width:100%;
+            height: 190px;
+            margin: 10px auto 20px;
+            background: #FFDD7195;
+            border-radius:15px;
+            border: 1px solid #FFDD71;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            img{
+                width:70%;
+            }
+        }
+        .background-home-section3-mint{
+            @extend %btn-mint-home;
+            background-image: url('../images/Grupo-370.png');
+            margin: auto;
+            .home-section3-mint-btn{
+                @extend %btn-mint-home-1;
+                background-color: $primary;
+            }
+        } 
+    }
+    //Bloque 3  
+    &-box3{
+        img{
+            z-index: 5;
+            max-width: 420px;
+            width: 100%;
+           }
+    }
+}
+
+//SECCION 4
+
+
+.home-section4{
+    &-all{
+        overflow: hidden;
+    }
+    &-box1{
+        height: 780px;
+        @extend %home-roap-map;
+        @extend %max-width;
+        & > div{
+            display: flex;
+            justify-content:space-around;
+            max-width: 480px;
+
+        }
+        &-tittle{
+            @include size-h2-primary-text;
+            @include bg-gradient-primary-text;
+            padding-top: 140px;
+        }
+        &-hr{
+            width: 900px;
+           @extend %separador;
+        }
+       .home-section4-box1-boxs{
+            display: flex;
+            flex-direction: column;
+            justify-content: inherit;
+            align-items: center;
+            background-color:$color1;
+            height: 290px;
+            max-width:435px;
+            width:100%;
+            margin-bottom:40px;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 84% 100%, 0 100%, 0% 50%);
+            border-radius: 25px;
+            h5{
+                font-family: 'Gotham';
+                font-weight:500;
+                font-size: 1.45rem;
+                line-height: 33px;
+            }
+            &-container1{
+                margin-top: 30px;
+                h5{
+                    max-width:260px;
+                }
+                img{
+                    width:140px;
+                }
+            }
+            &-container2{
+                h5{
+                    max-width:210px;
+                    margin-top: -15px;
+                }
+                img{
+                    width:230px;
+                    transform: translateY(-30px);
+                }
+            }
+            &-container3{
+                justify-content: center;
+                
+                h5{
+                    max-width:300px;
+                    margin-bottom: 25px;
+                }
+                img{
+                    width:320px;
+                }
+            }
+            &-container4{
+                flex-direction: column;
+                align-items: center;
+                transform: translateY(-30px);
+
+               
+                h5{
+                    max-width:383px;
+                    margin-top: -90px;
+                }
+                img{
+                    width:110px;
+                    margin:auto;
+                    transform: translateY(-125px);
+                }
+            }
+            &-container5{
+                pointer-events: none;
+                img{
+                  max-width: 380px;
+                  width: 100%;
+                  position: absolute;
+                  transform: translate(-300px , -200px);
+                  pointer-events: none;
+                }
+              }
+            &-container6{
+                pointer-events: none;
+              img{
+                width: 650px;
+                transform: translate(345px , -200px);
+                pointer-events: none;
+              }
+            }
+        }
+    }
+    &-box2{
+
+        &-tittle{
+            padding-top: 140px;
+            @include size-h2-primary-text;
+            @include bg-gradient-primary-text;
+        }
+        &-hr{
+            width: 360px;
+            @extend %separador;
+        }
+        &-description{
+            margin-top: -8px;
+            margin-bottom: 80px;
+            @include size-h5-fifth-text;
+        }
+        &-all{
+            max-width: 1300px;
+            margin: auto;
+                &-price-what1{
+                    padding: 10px 25px;
+                    width: 250px;
+                    margin: 0 auto;
+                    @extend %price-template-1;
+                    .price-what-where{
+                        padding: 0px 20px;
+                    }
+
+                }
+                &-price-what2{
+                    padding: 10px 25px;
+                    margin: 0 auto;
+                    width: 265px;
+                    @extend %price-template-1;
+                    .price-what-where{
+                        padding: 0px 10px;
+                    }
+                }
+                &-price-what3{
+                    padding: 10px 25px;
+                    margin: 0 auto;
+                    width: 200px;
+                    @extend %price-template-1;
+                    .price-what-where{
+                        padding: 0px 10px;
+                    }
+                }
+                &-price-what4{
+                    padding: 10px 25px;
+                    margin: 0 auto;
+                    width: 260px;
+                    @extend %price-template-1;
+                    .price-what-where{
+                        padding: 0px 14px;
+                    }
+                }
+                .price-what-where{
+                    font-size: 2.4rem;
+                    @extend %price-template-1-2;
+                }
+        }
+    }
+    &-box3{
+       
+        &-content{
+                background: rgb(236,194,85);
+                background: linear-gradient(180deg, rgba(236,194,85,1) 34%, rgba(221,168,62,1) 73%, rgba(211,147,43,1) 100%);
+                @extend %max-width;
+                padding: 65px 60px 60px;
+                border-radius: 50px;
+                margin-top: 70px;
+                
+        }
+        &-box1{
+                display: flex;
+                align-items: stretch;
+                margin-top: 25px;
+                
+            &-title{
+                font-weight: 800;
+                font-size: 3.4rem;
+            }
+            &-description{
+                @extend %home-section4-box3-description;
+            }
+            #img-Q2-2022{
+                width: 290px;
+                transform: translateX(-40px);
+            }
+            #img-Q3-2022 {
+                width: 300px;
+                position: absolute;
+                transform: translate(-120px, -65px);
+            }
+            .q4-2022-desc{
+                transform: translateX(-50px);
+            }
+        }
+        &-box2-info{
+            background: #FFFFFF23;
+            padding: 25px 0;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            &-padding{
+                padding:0 30px;
+            }
+            &-data{
+                @extend %home-section4-box3-description;
+            }
+        }
+        @media screen and (max-width:869px){
+            &-content{
+                padding: 0;
+                width: 100%;
+            }
+            &-title{
+                font-size: 2.8rem;
+            }
+            &-box2-info{
+                padding: 10px 0;
+                &-data{
+                    margin: 0;
+                    padding:15px 5px;
+                }
+        }
+            
+    }
+    }
+    &-box4{
+        h2{
+            @include size-h2-primary-text;
+            margin-top: 90px;
+            margin-bottom: 40px;
+        }
+        &-container{
+            max-width: 1300px;
+            width: 100%;
+            margin: auto;
+            @extend %home-roap-map;
+            padding: 15px 0;
+            &-nft{
+                &-items{
+                    max-width: 320px;
+                    width: 100%;
+                    margin: auto;
+                    &-name{
+                        font-weight: 800;
+                        font-size: 2.4rem;
+                        margin-bottom: 20px;
+
+                    }
+                    img{
+                        width: 90%;
+                    }
+                    &-rank{
+                        font-weight: 300;
+                        font-size: 2.4rem;
+                        margin-top: 10px;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+.background-home-section4-download-road-map{
+    background-image: url('../images/Grupo-411.png');
+    width: 290px;
+    margin:40px auto;
+    @extend %btn-mint-home;
+}
+.home-section4-download-road-map-btn{
+    border-radius: 13px;
+    @extend %btn-mint-home-1;
+    @include bg-gradient-primary-1;
+}
+
+
+
+//HOME RESPONSIVE 
+   @media screen and (max-width:1080px){
+   .home-section4-box1 .home-section4-box1-boxs-container6 img{
+    width: 450px;
+    transform: translate(235px, -200px);  
+}
+   }
+   @media screen and (max-width:869px){
+    .home-section4-box1 {
+        height: 1550px;
+    }
+    .home-section4-box1 .home-section4-box1-boxs-container3 img{
+        max-width: 330px;
+        width: 90%;
+    }
+    .home-section4-box1 .home-section4-box1-boxs-container5 img{
+        width: 350px;
+    }
+    .home-section4-box1 .home-section4-box1-boxs-container6 img{
+        width: 300px;
+    transform: translate(372px, -215px);
+   }
+   #img-Q2-2022{
+    width: 290px;
+    transform: translateX(0px) !important;
+    margin-bottom: 25px;
+}
+    #img-Q3-2022{
+        position: relative !important;
+        transform: translate(0, 0) !important;
+    }
+    .home-section4-box3-box1 .q4-2022-desc {
+        transform: translateX(0px)!important;
+    }
+    .home-section4-box1 .home-section4-box1-boxs-container4 {
+    transform: translateY(0px) !important;
+}
+ .home-section4-box1-boxs{
+    padding: 15px 10px;
+    height: 315px !important;
+}
+}
+
+
+//PAGINA 2, "BIENVENIDO"
+
+.welcome-section{
+    @extend %max-width2;
+    background-color: $bg-semi-transparent-1;
+    margin-top:170px;
+    margin-bottom: 40px;
+    border-radius:25px;
+    &-ovni1{
+        width: 205px;
+        transform: translate(240px , 15px);
+    }
+    &-ovni2{
+        width: 350px;
+        position: relative;
+        margin-top: -120px;
+        transform: translate(-490px, -80px);
+    }
+    &-logo{
+        max-width: 850px;
+        margin-top: -30px;
+        margin-bottom: -30px;
+        width: 90%;
+    }
+    .title-top{
+        font-size: 3.9rem;
+        font-weight: 700;
+        margin: 0;
+    }   
+    .title-bottom{
+        font-size: 3.9rem;
+        font-weight: 700;
+        text-align: center
+    }
+    .background-welcome-section-stacking{
+        z-index: 5;
+        @extend %btn-mint-home;
+        width: 210px;
+         background-image: url('../images/Grupo-109.png');
+         .welcome-section-stacking-btn{
+            transform: translateY(0px);       
+            width: 93%;
+            font-size: 1.2rem;
+            @extend %btn-mint-home-1;
+             @include bg-gradient-primary-1;
+        }
+    }
+}
+    @media screen and (max-width:1024px) {
+        .welcome-section{
+        &-ovni1{
+            width: 190px;
+            transform: translate(240px , 15px);
+        }
+        &-ovni2{
+            width: 330px;
+            position: relative;
+            margin-top: -120px;
+            transform: translate(-440px, -80px);
+        }
+        &-logo{
+            max-width: 750px;
+            margin-top: -10px;
+            margin-bottom: -10px;
+        }
+        .title-top{
+            font-size: 3.7rem;
+        }   
+        .title-bottom{
+            font-size: 3.7rem;
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    .welcome-section{
+        text-align: center;
+    &-ovni1{
+        width: 190px;
+        transform: translate(0, 25px);
+        margin-left: auto;
+        margin-bottom: 40px;
+    }
+    &-ovni2{
+        width: 240px;
+        position: relative;
+        margin-top: -120px;
+        transform: translate(0px, 0px);
+        margin-right: 55%;
+        pointer-events: none;
+    }
+    &-logo{
+        max-width: 750px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    .title-top{
+        font-size: 2.4rem;
+    }   
+    .title-bottom{
+        font-size: 2.5rem;
+        z-index: 5;
+        margin-bottom: 50px;
+    }
+}
+}
+
+
+
+//NFT BACK INVESTOR 
+.nft.back-investor-box2-section2{
+    height: 500px;
+    padding: 40px;
+    overflow-y: auto;
+}
+//BACK INVESTOR
+
+.back-investor{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 310px auto;
+    grid-gap: 40px;
+    margin-top:170px;
+    padding-bottom: 30px;
+    @extend %max-width2;
+    &-box1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:$bg-semi-transparent-1;
+        color: #fff;
+        padding: 45px 0;
+        border-radius: 30px;
+        div#arrow-div {
+            position: relative;
+            top: -20px;
+            right: 115px;
+        }
+        .name.data-perfil-text {
+            font-size: 1.7rem;
+            font-weight: 800;
+            margin: 7px 0 0;
+        }
+        .email.data-perfil-text {
+            font-family: 'Gotham';
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+        & > img{
+            width: 110px;
+            height: 110px;
+            border-radius:50%;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+        
+        & > #btn-active-back-investor{
+            @include bg-gradient-primary-1;
+
+        }
+        & > a{
+            margin-top: 20px;
+            background-color: $primary;
+            color: #fff;
+            font-weight: 100;
+            outline: none;
+            border: none;
+            height: 45px;
+            width: 190px;
+            border-radius: 30px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            cursor: pointer;
+                & > img{
+                    width: 25px;
+                    margin-right: 13px;
+                    color: #fff
+                }
+    }
+    a:hover{
+        @include bg-gradient-primary-1;
+}
+        & > #follow-us{
+            margin: 30px 0 15px 0;
+            font-size: 1.2rem;
+        }
+        & > .socials-media{
+            background-color: $color4;
+            border-radius: 30px;
+            width: 200px;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 20px;
+            & > img{
+                height: 22px;
+                width: 60px;
+                object-fit: contain;
+            }
+        }
+        
+       
+
+    }
+    &-box2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-section1{
+            max-width: 700px;
+            width: 100%;
+            height: 65px;
+            align-items: flex-end;
+            display: flex;
+            @include bg-gradient-primary-1;
+            border-radius: 30px;
+            margin-bottom: 30px;
+            & > ul {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+                color: #fff;
+                font-size: 1.5rem !important;
+                width: 100%;
+                align-items: baseline;
+                font-family: 'Gotham';
+                font-weight: 800;
+                li{
+                    padding: 0 35px;
+                    font-size: 1.3rem !important;
+                }
+                .bar-menu-investor{
+                    border-right: 1px solid #fff;
+                    border-left: 1px solid #fff;
+                }
+            & > button{
+                background-color: white;
+                outline: none;
+                border: none;
+                height: 45px;
+                width: 140px;
+                border-radius: 30px;
+                color:black;
+                font-family: 'HelveticaNeue';
+                font-weight: 100;
+                font-size: 1.5rem;
+            }
+            
+            }
+        }
+        &-section2{
+            @extend %secciones-back-investor-borders;
+            width: 100%;
+            height: 300px;
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            grid-gap: 15px;
+            justify-content: space-around;
+            align-items: center;
+            margin:0 auto;
+            padding: 0 35px;
+            &-nft{
+                    img{
+                       @extend %width-nft;
+                        
+                    }
+                    & > button{
+                        @extend %btn-back-investor-ver-mas;
+                        position: absolute;
+                        transform: translate(50px, -135px);
+                    }
+            }
+        }
+        &-section3{
+            display: grid;
+            grid-template-columns: 230px auto;
+            justify-content: space-around;
+            background-color:$bg-semi-transparent-1;
+            width: 100%;
+            height: 220px;
+            margin-top: 25px;
+            border-radius: 40px;
+            color: #fff;
+            padding: 20px 0;
+            &-box1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .wallet-title-price-investor{
+                   @extend %wallet-price-investor;
+                 }
+                & > .price{
+                    @extend %back-investor-price;
+                }
+            }
+            &-box2{
+                border-left: 3px solid white;
+                padding: 0 30px 0 60px;
+                width: 530px;
+            }
+            
+           
+        }
+    }
+}   
+@media screen and(max-width:1400px){
+    .back-investor{
+        display: grid;
+        &-box1{
+            height:640px;
+        }
+        &-box2-section1{  
+                 ul{
+                    padding: 10px 0;
+                    margin: 0;
+                }
+        }
+        &-box2-section2{  
+            margin-top: 30px;   
+            padding: 30px 0;
+            grid-template-columns: auto auto;
+            height: 100%;
+        }
+        &-box2-section3{
+            text-align:center;
+            grid-template-columns: auto; 
+            height: 100%;
+                &-box1{
+                    border-right: none;
+                }
+                &-box2{
+                        border-right: 3px solid white;
+                        margin-top: 30px;
+                        padding: 0 60px 0 60px;
+                }
+        }
+    }
+}
+@media screen and(max-width:1200px){
+    
+    .nft.back-investor-box2-section2{
+        grid-template-columns: auto auto auto;
+        height: 100%;
+    }
+    
+    .back-investor{
+        grid-template-columns: auto;
+        &-box1{
+            max-width: 300px;
+            width: 280px;
+            margin: auto;
+        }
+        &-box2-section1 > ul{
+            li{
+                padding: 0;
+            }
+            .bar-menu-investor{
+                padding:0 20px;
+            }
+        }
+      
+       
+        &-box2-section3-box2{
+            padding: 0 5px;
+        }
+    }
+ }
+ @media screen and(max-width:800px){
+    .nft.back-investor-box2-section2{
+        grid-template-columns: auto auto;
+    }
+     .bar-menu-investor{
+         border: none;
+
+     }
+    .back-investor{
+        &-box2{
+            &-section1{
+            width: 100%;
+            height: 160px;
+            & > ul{
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 10px;
+                li{
+                    margin: 10px 0;
+                }
+                }
+            }
+            &-section2{  
+                margin-top: 30px;   
+                padding: 30px 0;
+                grid-template-columns: auto;
+                height: 100%;
+                   
+            }&-section3-box1{
+                .price{
+                    font-size: 45px;
+                }  
+            }
+            &-section3-box2{
+            width: 310px;
+            }
+        }
+       
+        
+    }
+}
+.hide-container-all{
+    display: grid;
+    grid-template-columns: 160px auto;
+    grid-gap: 30px;
+  }
+  
+  .back-investor-box1.hide-perfil {
+    width: 160px;
+    border-radius: 40px;
+    height: 100%;
+    justify-content: inherit;
+    div#arrow-div {
+        position: relative;
+        top: -7px;
+        right: 45px;
+    }
+  }
+  
+  .back-investor-box1.hide-perfil > img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+  .back-investor-box1.hide-perfil .data-perfil-text{
+    display: none;
+  }
+  
+  .back-investor-box1.hide-perfil > a {
+    margin-top: 20px;
+    background-color: $primary;
+    color: #f3eeed;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 65%;
+    border-radius: 30px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .back-investor-box1.hide-perfil > a > img {
+    width: 22px;
+    margin-right: 5px;
+    color: #f3eeed;
+  }
+  
+  .back-investor-box1.hide-perfil > .socials-media {
+    border-radius: 30px;
+    width: 60px;
+    height: 210px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+  }
+.hide-container-all.back-investor-box2-section3-box2 {
+    margin: auto !important;
+  }
+
+@media screen and(max-width:650px){
+    .nft.back-investor-box2-section2{
+        grid-template-columns: auto;
+        height: 100%;
+    }
+    .hide-container-all{
+        display: grid;
+        grid-template-columns:auto;
+        grid-gap: 30px;
+      }
+   .back-investor{
+    div#arrow-div {
+        display: none;
+    }
+    
+        &-box1.hide-perfil{
+            width: 280px;
+            height: 100%;
+            & > img{
+                width: 110px;
+                height: 110px;
+            }
+            div#arrow-div {
+                display: none;
+            }
+            .data-perfil-text{
+                display: flex;
+              }
+              .socials-media {
+                width: 200px;
+                display: flex;
+                flex-direction:row;
+                justify-content: space-around;
+                padding: 10px 20px;
+                height: 50px;
+                }
+        }
+}
+}
+
+
+//INVESTOR 
+
+.page-investor-box2-section2{
+    @extend %secciones-back-investor-borders;
+    width: 100%;
+    &-container{
+        display: grid;
+        grid-template-columns: 170px 550px 80px;
+        justify-content: space-around;
+        align-items: center;
+        padding: 25px 40px 15px;
+        & img{
+            width: 100%;
+            max-width: 170px;
+        }
+    }
+    &-box1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .wallet-title-price-investor{
+            @extend %wallet-price-investor;
+        }
+        .price{
+            @extend %back-investor-price;
+            margin: 0 30px
+        }
+    }
+    &-box3{
+        display: flex;
+        flex-direction: column;
+        &-ver-mas{
+            @extend %btn-back-investor-ver-mas2;
+            margin-bottom: 10px;
+        } 
+        &-unstack{
+                @extend %btn-back-investor-unstack;
+        }
+    }
+
+}
+
+ @media screen and (max-width:1400px){
+    .page-investor-box2-section2-container {
+    grid-template-columns: 170px 450px 80px;
+    
+    
+     }
+ }
+ @media screen and (max-width:1100px){
+    .hide-container-all .page-investor-box2-section2-container {
+        grid-template-columns: 500px;
+        
+        .page-investor-nft{
+            margin: auto;
+        }
+        .page-investor-box2-section2-box3{
+            margin: auto;
+        }
+         }
+
+    
+ }
+
+ @media screen and (max-width:950px){
+    .page-investor-box2-section2-container {
+        grid-template-columns: 100%;
+        grid-gap: 25px;
+        justify-content: center;
+        align-items: center;
+        .page-investor-nft{
+            margin: auto;
+        }
+        .page-investor-box2-section2-box3{
+            margin: auto;
+        }
+    
+     }
+     .hide-container-all .page-investor-box2-section2-box1{
+        display: flex;
+        flex-direction: column;
+        padding-top: 35px;
+ }
+        .page-investor-box2-section2-box1{
+            display: flex;
+            flex-direction: column;
+        padding-top: 35px;
+
+        }
+     .hide-container-all .page-investor-box2-section2-container {
+        grid-template-columns: 100%;
+        
+        .page-investor-nft{
+            margin: auto;
+        }
+        .page-investor-box2-section2-box3{
+            margin: auto;
+        }
+        &-box1{
+            display: flex;
+            flex-direction: column;
+     }
+         }
+ }
+ .grafica-content {
+   @extend %size-div-1;
+}
+
+
+//PROPERTIES INFO DE NFT 
+
+.page-properties-box2-section2{
+    @extend %secciones-back-investor-borders;
+    width: 100%;
+    &-container{
+        display: flex;
+        padding-top: 30px;
+        padding-left: 55px;
+    
+        .separador-properties{
+            width: 100%;
+            height: 3px;
+            background-color: #ffffff;
+            margin: 11px 0;
+        }
+        &-box1{
+            display: flex;
+            flex-direction: column;
+            width: 310px;
+            border-right: 1px solid #fff;
+            padding: 50px 30px;
+            img{
+                @extend %width-nft;
+            }
+            .view-on-open-sea-properties{
+                color: #ffffff60;
+                font-size: 1.2rem;
+                margin-top: 10px;
+                transform: translateX(30px);
+                margin-bottom: 10px;
+            }
+            .propertiesh5{
+                font-family: 'HelveticaNeue';
+                font-weight: 100;
+                font-size: 1.35rem;
+            }
+            .btn-properties-bottom1{
+                @extend %btn-back-investor-ver-mas;
+                width: 100%;
+                margin:auto;
+                background-color: $color4;
+                border: none;
+                margin-bottom: 15px;
+                font-family: 'HelveticaNeue';
+                font-weight: 100;
+                font-size: 1.2rem;
+                height:  40px;
+
+            }
+        }
+        &-box2{
+            width: 335px;
+            padding: 0px 40px;
+            .properties-alien-name{
+                @extend %alien-name;
+            }
+            .birtday-properties{
+                display: flex;
+                justify-content: space-between;
+                h5{
+                    font-family: 'HelveticaNeue';
+                    font-weight: 100;
+                }
+            }
+            .facture-birthday-eth{
+                text-align: end;
+                margin-bottom: 25px;
+                color: #ffffff38
+            
+            }
+            a{
+                @extend %btn-back-investor-ver-mas;
+                width: 100%;
+                height:  43px;
+                margin:auto;
+                border: none;
+                border-radius: 30px;
+                margin-bottom: 15px;
+                font-family: 'HelveticaNeue';
+                font-weight: 100;
+                font-size: 1.4rem;
+                background-color: $primary;
+            }
+            a:hover{
+                @include bg-gradient-primary-1;
+            }
+  
+            .erc721{
+                font-family: 'Gotham';
+                font-weight: 800;
+                font-size: 1.6rem;
+                margin: 25px 0;
+            }
+        }
+    }
+}
+@media screen and (max-width:800px){
+    .page-properties-box2-section2{
+        &-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        padding-left: 0;
+
+            &-box1{
+                width: 100%;
+                max-width: 400px;
+                border-right: 0px solid #fff;
+               align-items: center;
+               .view-on-open-sea-properties{
+                transform: translateX(0px);
+            }
+            &-box2{
+                width: 100%;
+                max-width: 400px;
+
+            }
+        }
+    }
+}
+}
+
+
+//NOTICIAS 
+
+.page-noticias-box2-section2{
+    padding: 20px;
+    width: 100%;
+    @extend %secciones-back-investor-borders;
+    .noticias-title{
+        font-weight: 800;
+        font-size: 2.15rem;
+        text-align: center;
+        margin:10px 0;
+    }
+    &-all{
+        @extend %size-div-1;
+    }
+    .btn-give-away{
+        @extend %btn-back-investor-ver-mas;
+        @include bg-gradient-primary-1;
+        width: 100%;
+        max-width: 650px;
+        margin:25px auto;
+    }
+    &-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #472f23;
+        max-width: 790px;
+        width: 100%;
+        margin: 20px auto;
+        border-radius: 40px;
+        padding: 27px;
+        .img-perfil-noticias{
+            width: 55px;
+        }
+        .info-mensaje-noticias{
+            display: flex;
+            .info-mensaje-container{
+                margin-left: 20px;
+
+            }
+            .name-noticias{
+                margin: 0;
+                margin-bottom: 7px;
+                @extend %alien-name;
+            }
+            .mensaje-noticias{
+                font-family: 'HelveticaNeue';
+                font-weight: 100;
+                font-size: .8rem;
+            }
+        }
+        .btn-noticias-ver-mas{
+            @extend %btn-back-investor-ver-mas;
+        }
+    }
+}
+
+
+@media screen and (max-width:1320px){
+    .info-mensaje-noticias{
+        margin-right: 20px!important;
+        margin-left: 10px;
+
+}
+}
+
+
+@media screen and (max-width:900px){
+    .hide-container-all .page-noticias-box2-section2-container{
+        flex-direction: column !important;
+            .info-mensaje-noticias{
+            flex-direction: column;
+            align-items: center;
+            }
+        .btn-noticias-ver-mas{
+            margin-top: 15px;
+        }
+        .info-mensaje-container{
+            margin-top: 10px;
+            text-align: center;
+            max-width: 400px;
+
+        }
+    }
+}
+@media screen and (max-width:650px){
+    .page-noticias-box2-section2-container{
+        flex-direction: column;
+            .info-mensaje-noticias{
+            flex-direction: column;
+            align-items: center;
+            }
+        .btn-noticias-ver-mas{
+            margin-top: 15px;
+        }
+        .info-mensaje-container{
+            margin-top: 10px;
+            text-align: center;
+            max-width: 400px;
+        }
+    }
+}
+

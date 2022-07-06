@@ -1,0 +1,347 @@
+body{
+    background: transparent radial-gradient(closest-side at 104% 51%, #47220A 0%, #47220A 1%, #321F16 100%) 0% 0% no-repeat padding-box;
+}
+:root{
+    font-size:12px;
+}
+
+
+#arrow{
+    content:url("..\images/arrow-left.png");
+}
+.hide-perfil #arrow{
+    content:url("..\images/arrow-right.png") ;
+}
+//variables en general
+
+//valor fijo a todas las etiquetas presentes
+p{
+    font-family: 'HelveticaNeue';
+    margin:0;
+    padding:0;
+
+}
+a,h4,h5,h6,p{
+    text-decoration: none;
+    color: #fff;
+}
+h1,h2,h3{
+    font-family: 'Gotham';
+    color: #fff;
+}
+h2{
+   font-size: 5.6rem;
+}
+
+
+//COLORES
+$bg-semi-transparent-1:#FFF2DE11; 
+$color1:#8A3E2260; 
+$color2:#63352237;
+$color3:#3E2419;
+$color4:#472f23;
+
+//DIFUMINADO
+%blur{
+    backdrop-filter: blur(30px);
+}
+//BORDES
+$border-color:#7E6337;
+$border-color2:#D3932B;
+$border-color3:#67471D;
+
+
+
+//Remplace el color de la variable global de boostrap 
+$primary:#291B15;
+$spacer: 3.5rem; //Reajuste el  espaciado hacia el margin y el padding
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 870px,
+  xl: 1080px,
+  xxl: 1400px
+) ;
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// FIN COLORES
+
+
+//TAMAÑO H2
+@mixin size-h2-primary-text{
+    @media screen and (max-width:870px){
+        font-size:4.5rem;
+        font-weight:800;
+    }
+    font-size:5.5rem;
+    font-weight:800;
+}
+//TAMAÑO H5
+@mixin size-h5-fifth-text{
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-size: 1.4rem;
+
+}
+
+
+
+//DEGRADADOS
+//FONDO
+@mixin bg-gradient-primary-1{
+    background: transparent linear-gradient(270deg, #E5C467 0%, #B77628 51%, #893E20 100%) 0% 0% no-repeat padding-box;
+}
+//TEXTO
+@mixin bg-gradient-primary-text{
+    background: #a73e20; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a73e20, #e5c467); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a73e20, #e5c467); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+// FIN DEGRADADOS
+
+
+
+//FUENTES
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueBold.eot');
+    src: url('../fonts/HelveticaNeueBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueBold.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueBold.woff') format('woff'),
+        url('../fonts/HelveticaNeueBold.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueBold.svg#HelveticaNeueBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueRegular.eot');
+    src: url('../fonts/HelveticaNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueRegular.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueRegular.woff') format('woff'),
+        url('../fonts/HelveticaNeueRegular.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueRegular.svg#HelveticaNeueRegular') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeueMedium.eot');
+    src: url('../fonts/HelveticaNeueMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueMedium.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueMedium.woff') format('woff'),
+        url('../fonts/HelveticaNeueMedium.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueMedium.svg#HelveticaNeueMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Medium.woff2') format('woff2'),
+        url('../fonts/Gotham-Medium.woff') format('woff'),
+        url('../fonts/Gotham-Medium.ttf') format('truetype'),
+        url('../fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Light_1.woff2') format('woff2'),
+        url('../fonts/Gotham-Light_1.woff') format('woff'),
+        url('../fonts/Gotham-Light_1.ttf') format('truetype'),
+        url('../fonts/Gotham-Light_1.svg#Gotham-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Black.woff2') format('woff2'),
+        url('../fonts/Gotham-Black.woff') format('woff'),
+        url('../fonts/Gotham-Black.ttf') format('truetype'),
+        url('../fonts/Gotham-Black.svg#Gotham-Black') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+//fin FUENTES
+
+//SEPARADOR
+%separador{
+    height: 1px;
+    background-color: #fff;
+    margin: 10px auto 45px;
+}
+
+//PLANTILLAS
+
+//Es una plantilla para el boton de mint
+%btn-mint-home{
+    width: 160px;
+    height: 75px;
+    padding: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%btn-mint-home-1{
+    font-family: 'HelveticaNeue';
+    font-weight:500;
+    height: 92%;
+    width: 100%;
+    transform: translateY(-4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 1.5rem;
+}
+
+// PRECIO DEL HOME "WHAT WE ARE" Y "ROAP MAP" 
+%price-template-1{
+    font-size: 1.25rem;
+    font-family: 'HelveticaNeue';
+    font-weight: 500;
+    border-radius: 35px;
+    background: $color3;
+    border: 1px solid $border-color3;
+    margin-top: 23px;
+}
+%price-template-1-2{
+        font-family: 'HelveticaNeue';
+        font-weight: 500;
+        color:#fff;
+        border: 1px solid #fff;
+        border-radius: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 42px;
+}
+
+//BACKGROUND ROAP MAP
+
+%home-roap-map{
+    background-color: $color2;
+    border:1px solid $border-color3;
+    padding: 40px 0px;
+    border-radius: 20px;
+}
+
+//MAX WIDTH
+
+%max-width{
+    max-width:1010px;
+    width: 100%;
+    margin:auto;
+}
+%max-width2{
+    max-width:1750px;
+    width: 90%;
+    margin:auto;
+}
+
+
+//TEXTOS 
+
+//HOME SECCION 4 BOX-3
+// %home-section4-box3-title{
+
+// }
+ %home-section4-box3-description{
+    font-weight: 800;
+    font-size: 1.65rem;
+    text-transform: uppercase;
+    @media screen and (max-width:869px){
+        %home-section4-box3-description{
+            font-size: 1.30rem;
+    }
+}
+}
+
+
+
+
+//BACK INVESTOR
+%secciones-back-investor-borders{
+    background-color:$bg-semi-transparent-1;
+    border-radius: 40px;
+}
+%size-div-1{
+    height: 455px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+%size-div-1::-webkit-scrollbar{
+    width: 80px;     /* Tamaño del scroll en vertical */
+    height: 8px; /* Tamaño del scroll en horizontal */
+    display: none;   
+}
+%back-investor-price{
+    font-size: 60px;
+    font-weight: 800;
+    font-family: "Gotham";
+}
+%back-investor-price{
+    font-size: 60px;
+    font-weight: 800;
+    font-family: "Gotham";
+}
+%wallet-price-investor{
+    font-family: "HelveticaNeue";
+    font-weight: 100;
+    font-size: 1.4rem;
+    margin: 0;
+}
+%btn-back-investor-ver-mas{
+    height: 40px;
+    width: 90px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    font-size: 13px;
+    color: #fff;
+    background-color: transparent;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+%btn-back-investor-ver-mas2{
+    height: 45px;
+    width: 100px;
+    border-radius: 25px;
+    @extend %btn-back-investor-ver-mas;
+   
+}
+
+%btn-back-investor-unstack{
+    @extend %btn-back-investor-ver-mas2;
+    background-color: $primary;
+   
+}
+%width-nft{
+    max-width: 190px;
+}
+
+%alien-name{
+    font-family: 'Gotham';
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+
+//Fin variables en general
